@@ -63,23 +63,12 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "sitis": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::sito.sito",
-      "inversedBy": "users"
-    },
     "invitationCode": {
       "type": "string",
       "unique": true
     },
     "avatar_color": {
       "type": "string"
-    },
-    "permessi": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::funzioni-app.funzioni-app"
     }
   }
 }

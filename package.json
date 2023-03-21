@@ -1,0 +1,17 @@
+{
+  "name": "repro16151",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/**",
+    "packages/**"
+  ],
+  "scripts": {
+    "frontend:dev": "cd apps/frontend && npm run dev",
+    "cms:dev": "cd apps/cms && npm run develop"
+  },
+  "dependencies": {
+
+  }
+
+}

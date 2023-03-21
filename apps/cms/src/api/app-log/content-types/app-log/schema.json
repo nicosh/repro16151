@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_logs",
+  "info": {
+    "singularName": "app-log",
+    "pluralName": "app-logs",
+    "displayName": "app_log",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "json"
+    },
+    "utente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "entity": {
+      "type": "string"
+    },
+    "entityId": {
+      "type": "biginteger"
+    }
+  }
+}
